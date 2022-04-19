@@ -1,0 +1,453 @@
+﻿@font-face {
+    font-family: 'OpenSansHebrew-Regular';
+    src: url('../fonts/OpenSansHebrew-Regular.ttf') format('truetype');
+    src: url('../fonts/OpenSansHebrew-Regular.ttf') format('truetype'), url('../fonts/AnyConv.com__OPENSANSHEBREW-REGULAR.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew-Light';
+    src: url('../fonts/OpenSansHebrew-Light.ttf') format('truetype'), url('../fonts/AnyConv.com__OPENSANSHEBREW-LIGHT.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'OpenSansHebrew-Bold';
+    src: url('../fonts/OpenSansHebrew-Bold.ttf') format('truetype'), url('../fonts/AnyConv.com__OPENSANSHEBREW-BOLD.eot') format('embedded-opentype');
+}
+
+
+
+#bodyHomePage, #workingPage {
+    background-image: url('../images/backgroundHomePage.svg');
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 61%;
+    object-fit: cover;
+    direction: rtl;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0 auto;
+    font-family: 'OpenSansHebrew-Regular';
+    background-color: #f5f6f6;
+    /* background-size: 1206px;*/
+}
+
+.navbar-nav {
+    margin: auto;
+}
+
+.navbar-expand-lg {
+    margin: auto;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: 20px;
+    color: #f5f6f6;
+}
+
+    .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+        color: #7548D6;
+        background-color: white;
+        border-radius: 5px;
+    }
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #f5f6f6;
+    text-align: right;
+    list-style: none;
+    background-color: #CCCCFF;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-item {
+    display: block;
+    width: 166px;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #f5f6f6;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+    .dropdown-item:hover, .dropdown-item:focus {
+        color: #7733D6;
+        background-color: #f5f6f6;
+    }
+
+    .dropdown-item.active, .dropdown-item:active {
+        color: #F5F6F6;
+        text-decoration: none;
+        background-color: #7733D6;
+    }
+
+.navHeadcolor {
+    color: #7733D6 !important;
+}
+
+
+
+.divLogo {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header .logo {
+    display: inline-block;
+    width: 6%;
+    float: left;
+    margin-top: 2%;
+}
+
+#takeapilLogo {
+    float: right !important;
+}
+
+#logo2 {
+    position: relative;
+    left: 6%;
+    width: 5%;
+}
+.homePage {
+    padding-top: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-family: OpenSansHebrew-Bold;
+    font-size: 70px;
+    color: #E5A901;
+    /* font-weight: 700; */
+    margin-right: 70px;
+}
+
+h2 {
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    margin-right: 254px;
+    margin-top: 30px;
+}
+h3 {
+    padding-top: 20px;
+    color: white;
+}t:ri /* margin: 0 auto; */
+    position: relative;
+    font-size: 20px;
+}
+
+#girl {
+    float: left;
+    height: 369px;
+    ;
+  
+     position: relative;
+    bottom: 199px;
+}
+
+
+
+#checklistAndTasks, #defineDutyHomeP, #GetToKnow {
+    background-image: url('../images/background page 222.svg');
+    background-repeat: no-repeat;
+    direction: rtl;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-position-x: center;
+    background-size: cover;
+    background-color: #F5F6F6;
+    font-family: 'OpenSansHebrew-Regular';
+}
+
+
+
+
+.minorMenu ul li a {
+    color: #7733D6;
+}
+
+    .minorMenu ul li a:hover {
+        background-color: white;
+    }
+
+
+body {
+    background-color: #100e17;
+    font-family: 'OpenSansHebrew-Regular';
+    width: 100%;
+}
+
+.card {
+    display: inline-block;
+    height: 199px;
+    width: 162px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -0.2rem 0 1.5rem #CCCCFF;
+    margin-left: -50px;
+    transition: 0.4s ease-out;
+}
+
+    .card:not(:first-child) {
+        margin-left: -50px;
+    }
+
+
+    .card:hover ~ .card {
+        position: relative;
+        left: 50px;
+        transition: 0.4s ease-out;
+    }
+
+.title {
+    color: #7733D6;
+    position: absolute;
+    left: 21px;
+    top: 33px;
+    font-size: 24px;
+    font-weight: 500;
+    width: fit-content;
+}
+
+.cardNumber {
+    display: inline-block;
+    position: relative;
+    right: 31%;
+    top: 8%;
+}
+
+
+.bar {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    height: 5px;
+    width: 150px;
+}
+
+.emptybar {
+    background-color: #2e3033;
+    width: 80%;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.filledbar {
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    width: 0px;
+    height: 100%;
+    background: rgb(0,154,217);
+    background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+    transition: 0.6s ease-out;
+    margin-right: 30px;
+}
+
+.card:hover .filledbar {
+    width: 120px;
+    transition: 0.4s ease-out;
+}
+
+.cardsBTN {
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px 7px 10px 7px;
+    background-color: #CCCCFF;
+    color: #7733D6;
+    font-weight: 600;
+    border: none;
+    position: relative;
+    top: 72px;
+    width: 95px;
+    font-size: 13px !important;
+    right: 34px;
+}
+
+
+#card1 {
+    z-index: 1;
+}
+
+    #card1:hover {
+        z-index: 6;
+    }
+
+#card2 {
+    z-index: 2;
+}
+
+    #card2:hover {
+        z-index: 6;
+    }
+
+#card3 {
+    z-index: 3;
+}
+
+    #card3:hover {
+        z-index: 6;
+    }
+
+#card4 {
+    z-index: 4;
+}
+
+    #card4:hover {
+        z-index: 6;
+    }
+
+#card5 {
+    z-index: 5;
+}
+
+    #card5:hover {
+        z-index: 6;
+    }
+
+
+
+
+.btn-outline-light {
+    position: relative !important;
+    top: 30px !important;
+}
+
+.btn-info {
+    width: 42%;
+    position: relative;
+    top: 63%;
+    left: 11%;
+    border-radius: 18px;
+}
+
+.boardBTN {
+    position: relative;
+    top: 80%;
+    right: 45%;
+}
+
+.longTitle {
+    right: 6%;
+}
+
+#mainContent{
+    align-items:center;
+    margin:0 auto;
+    margin-top:20px;
+}
+
+iframe{
+    display:block;
+}
+
+.DoneSectionBTN {
+    border: none;
+    border-radius: 6px;
+    background-color: #EABF4E;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    right: 439px;
+    width: 30%;
+}
+
+p.pil-text {
+    margin: 0 auto;
+    position: relative;
+    /* top: 3px; */
+    font-size: 20px;
+    right: 255px;
+}
+
+video {
+    margin: 0 auto;
+    position: relative;
+    right: 261px;
+}
+
+.definDutyMapHide {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    cursor: pointer;
+   
+}
+
+.definDutyMapShow {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+    cursor: pointer;
+    /* padding: 127px; */
+    background-image: url('../images/Map.svg');
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: center;
+    background-position-y: center;
+}
+.inThePopUp {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    /* vertical-align: middle !important; */
+    position: relative;
+    top: 200px;
+}
+
+.nextPart {
+    border-radius: 10px;
+    background-color: #EABF4E;
+    border: none;
+    border-color: none !important;
+    color: black;
+    box-shadow: none !important;
+    /* margin: auto; */
+    position: relative;
+    top: 200px;
+    right: 585px;
+    z-index: 10;
+}

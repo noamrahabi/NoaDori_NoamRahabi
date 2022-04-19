@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/bootstrap.bundle.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+</head>
+
+<body id="checklistAndTasks" class="container-fluid">
+
+    <header>
+        <div class="divLogo col-lg-12 col-sm-4">
+            <a href="index.html">
+                <img class="logo" id="logo2" src="images/logo.png" />
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a aria-current="page" class="nav-link navHeadcolor" href="temporal.html">היכרות עם פיל</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link navHeadcolor" id="navbarDropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">צ'קליסטים ומשימות</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="temporal.html">הגדרת חובות</a></li>
+                                <li><a class="dropdown-item" href="temporal.html">חיפוש חובות</a></li>
+                                <li><a class="dropdown-item" href="temporal.html">הגדרת משימות</a></li>
+                                <li><a class="dropdown-item" href="temporal.html">ניהול משימות</a></li>
+                                <li><a class="dropdown-item" href="temporal.html">מסמכים</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link navHeadcolor" href="temporal.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                דירקטוריון
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="temporal.html">הקמת משתתפים</a></li>
+                                <li><a class="dropdown-item" href="temporal.html">הקמת ישיבות</a></li>
+                                <li><a class="dropdown-item" href="temporal.html">ייבוא נושא לסדר היום</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <h1 class="col-lg-6 col-sm-12">צ'קליסטים ומשימות</h1>
+    </header>
+
+
+    <div class="row" style="margin: 0 auto; width: 50%; margin-top: 12%; ">
+        <div class="card col-lg-2 col-sm-6" id="card5">
+
+            <h3 class="title">הגדרת חובות</h3>
+            <div class="cardNumber">
+                <img src="images/1.svg" />
+            </div>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+
+            <button type="button" class="btn btn btn-info" onclick="window.location.href = 'DefineDuty.aspx';" ><</button>
+
+        </div>
+
+        <div class="card col-lg-2 col-6" id="card4">
+            <h3 class="title">חיפוש חובות</h3>
+            <div class="cardNumber">
+                <img src="images/2.svg" />
+            </div>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <button type="button" class="btn btn btn-info"><</button>
+        </div>
+
+        <div class="card col-lg-2 col-6" id="card3">
+            <h3 class="title longTitle">הגדרת משימות</h3>
+            <div class="cardNumber">
+                <img src="images/3.svg" />
+            </div>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <button type="button" class="btn btn btn-info" onclick="window.location.href = 'defineDuty.html';"><</button>
+        </div>
+
+        <div class="card col-lg-2 col-6" id="card2">
+            <h3 class="title">ניהול משימות</h3>
+            <div class="cardNumber">
+                <img src="images/4.svg" />
+            </div>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <button type="button" class="btn btn btn-info"><</button>
+        </div>
+        <div class="card col-lg-2 col-6" id="card1">
+            <h3 class="title longTitle">חיפוש מסמכים</h3>
+            <div class="cardNumber">
+                <img src="images/5.svg" style="width: 29%;position: relative;right: 5%;" />
+            </div>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <button type="button" style="top: 46%; right: 30%;" class="btn btn btn-info"><</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a href="temporal.html">
+                <button type="button" class="btn btn-light boardBTN">דירקטוריון</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
