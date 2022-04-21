@@ -21,7 +21,8 @@
             <asp:Label ID="mail" runat="server" Text="מייל"></asp:Label>
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
 
-            <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click" OnClientClick="storage(); return false;"/>
+       <asp:Button ID="Button1" runat="server" Text="Submit" OnClick="Button1_Click"/>
+         
 
         </div>
     </form>

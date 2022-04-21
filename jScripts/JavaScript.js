@@ -35,13 +35,22 @@
 
 }); // end of document
 
-function storage() {
-    Console.log('i am storage');
-    var userName = document.getElementById(TextBox1.Text);
-    var UserMail = document.getElementById(TextBox2.Text);
+function Mystorage(Name, Email) {
+    console.log('i am storage');
+
+    //קבלת נתונים מההתחברות
+    var userName = Name;
+    var UserMail = Email;
+
+   //הזנה לאחסון
     sessionStorage.setItem("UserName", userName);
     sessionStorage.setItem("UserMail", UserMail);
 
+    console.log(sessionStorage.getItem("UserName"));
+    console.log(sessionStorage.getItem("UserMail"));
+
+    session["usermail"] = sessionStorage.getItem("UserMail");
 }
+
 
 

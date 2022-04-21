@@ -99,7 +99,7 @@
 
 
         <form runat="server">
-            <asp:Button ID="DoneDefineDuty" class="DoneSectionBTN" runat="server" Text="סיימתי את המקטע" OnClick="DoneDefineDuty_Click" OnClientClick="return false;" />
+            <asp:Button ID="DoneDefineDuty" class="DoneSectionBTN" runat="server" Text="סיימתי את המקטע" OnClick="DoneDefineDuty_Click" />
 
             <div class="DoneBlock definDutyMapHide">
 

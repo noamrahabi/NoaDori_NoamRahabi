@@ -9,6 +9,7 @@ using System.Data;
 public partial class _Default : System.Web.UI.Page
 {
     SQLClass mySQLClass = new SQLClass();
+    
     protected void Page_Load(object sender, EventArgs e)
     {
 
@@ -19,15 +20,15 @@ public partial class _Default : System.Web.UI.Page
     protected void DoneDefineDuty_Click(object sender, EventArgs e)
 
     {
-        //string userMail = sessionStorage.getItem("UserMail");
+        var userMail = Session["usermail"];
         ////למשוך את האימייל של היוזר שיש בסשן סטורג'
-        //string myUserId = "select ID from Users where Email = '" + userMail + "'";
+        string myUserName = "select FullName from Users where Email = '" + userMail + "'";
+        DataSet mySQLAnswer = mySQLClass.SQLSelect(myUserName);        string SqlAnswer = mySQLAnswer.Tables[0].Rows[0][0].ToString();
+
 
         ////להזין את האיי די של המשתמש ואת השם של הרכיב לטבלת התקדמות
-        //string myQuery = "insert into Progress (ID, CompoID) values ('"+ myUserId + "','defineDuty')";
+        string myQuery = "insert into Progress (UserName, CompoID) values ('" + SqlAnswer + "','defineDuty')";
 
-        //mySQLClass.SQLChange(myQuery);
-
-
+        mySQLClass.SQLChange(myQuery);
     }
 }
