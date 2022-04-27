@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="DefineDuty.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="TaskManage.aspx.cs" Inherits="TaskManage" %>
 
 <!DOCTYPE html>
 
@@ -23,8 +23,9 @@
     <script src="jScripts/JavaScript.js"></script>
 
 </head>
-<body id="defineDutyHomeP">
-    <header>
+<body>
+
+      <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
 
@@ -39,7 +40,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link navHeadcolor" id="navbarDropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">צ'קליסטים ומשימות</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                     <li><a class="dropdown-item" href="DefineDuty.aspx">הגדרת חובות</a></li>
+                              <li><a class="dropdown-item" href="DefineDuty.aspx">הגדרת חובות</a></li>
                                 <li><a class="dropdown-item" href="SearchDuty.aspx">חיפוש חובות</a></li>
                                 <li><a class="dropdown-item" href="DefineTasks.aspx">הגדרת משימות</a></li>
                                 <li><a class="dropdown-item" href="TaskManage.aspx">ניהול משימות</a></li>
@@ -62,60 +63,5 @@
 
     </header>
 
-    <h1>הגדרת חובות</h1>
-    <h2>איך להגיע לעמוד ההגדרה של הצ'קליסט?</h2>
-
-    <div id="mainContent">
-        <iframe src="EntreDefPage - Storyline output/story.html" width="100" height="300" style="overflow: visible; width: 60%; margin: 0 auto"></iframe>
-
-        <h2>עמוד החובה</h2>
-        <p class="pil-text">
-           את הגדרת החובה מבצעים בלשונית 'אופן היישום'.
-            <br />
-            לפני שתעשו את זה, היכנסו לעמוד החובה והכירו את לשונית מידע כללי
-        </p>
-
-        <video width="720" height="500" controls="controls">
-            <source src="videos/generalInfoTab.mp4" type="video/mp4" />
-        </video>
-
-        <p class="pil-text" style="top: 25px;">
-            הבטחנו שהמערכת תתחיל לעבוד בשבילכם, רק כמה צעדים פשוטים וזה יקרה. התשובה בסרטון
-        </p>
-
-        <video width="720" height="500" controls="controls">
-            <source src="videos/defineDuty.mp4" type="video/mp4" />
-        </video>
-
-          <h2>שינויים בעמוד החובה</h2>
-
-        <p class="pil-text">
-            עברו לקטע הבא כדי לראות את השינויים שחלו בעמוד החובה לאחר הגדרתה.<br />
-            לאחר לחיצה על 'התחלה', לחצו על כפתור השמירה
-      
-        </p>
-  
-        <iframe src="BeforeAndAfterDef - Storyline output/story.html" width="100" height="300" style="overflow: visible; width: 60%; margin: 0 auto; margin-top: 30px; margin-bottom: 30px;"></iframe>
-
-  
-        <form runat="server">
-                          
-            <asp:Button ID="DoneDefineDuty" class="DoneSectionBTN" runat="server" Text="סיימתי את המקטע" OnClick="DoneDefineDuty_Click" />
-       
-            <div class="DoneBlock definDutyMapHide">
-
-                <p class="inThePopUp">
-                    כל הכבוד!
-                    <br />
-                    סיימת מקטע חשוב בדרך אל היעד -<br />
-                    ניהול רגולציה ...
-                </p>
-                <asp:Button ID="NextPartBtn" class="nextPart" runat="server" Text="למקטע הבא"/>
-                <iframe src="images/flag.html" style="position: relative; width: 300px; height: 300px; right: 411px; top: 3px;"></iframe>
-
-            </div>
-
-        </form>
-    </div>
 </body>
 </html>

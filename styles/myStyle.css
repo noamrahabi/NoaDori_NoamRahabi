@@ -16,7 +16,7 @@
 
 
 #bodyHomePage, #workingPage {
-    background-image: url('../images/backgroundHomePage.svg');
+    background-image: url('../images/newbecgrounghomwpage.png');
     background-position-x: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -145,15 +145,14 @@ header .logo {
 h1 {
     font-family: OpenSansHebrew-Bold;
     font-size: 70px;
-    color: #E5A901;
+    color: #7733D6;
     /* font-weight: 700; */
     margin-right: 70px;
 }
-
 h2 {
     font-size: 25px;
     color: black;
-    font-weight: 600;
+    font-weight: 500;
     margin-right: 254px;
     margin-top: 30px;
 }
@@ -176,7 +175,7 @@ h3 {
 
 
 
-#checklistAndTasks, #defineDutyHomeP, #GetToKnow {
+#checklistAndTasks {
     background-image: url('../images/background page 222.svg');
     background-repeat: no-repeat;
     direction: rtl;
@@ -188,6 +187,18 @@ h3 {
     font-family: 'OpenSansHebrew-Regular';
 }
 
+
+
+#defineDutyHomeP, #GetToKnow {
+    background-image: url('../images/backgroungsecenderypage.png');
+    background-repeat: repeat;
+    direction: rtl;
+    overflow-x: hidden;
+    margin: 0 auto;
+    background-position-x: center;
+    background-color: #F5F6F6;
+    font-family: 'OpenSansHebrew-Regular';
+}
 
 
 

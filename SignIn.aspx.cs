@@ -30,7 +30,8 @@ public partial class _Default : System.Web.UI.Page
         string SignInQuery = "INSERT INTO Users (FullName, Email) VALUES ('" + UserName + "', '"+ UserEmail + "' )";
         mySQLClass.SQLChange(SignInQuery);
 
+        Session["Usermail"] = UserEmail;
         Response.Redirect("Home.html");
-   
+
     }
 }

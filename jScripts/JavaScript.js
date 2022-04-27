@@ -33,6 +33,8 @@
         $(this).addClass("definDutyMapHide");
     })
 
+
+
 }); // end of document
 
 function Mystorage(Name, Email) {
@@ -49,7 +51,18 @@ function Mystorage(Name, Email) {
     console.log(sessionStorage.getItem("UserName"));
     console.log(sessionStorage.getItem("UserMail"));
 
-    session["usermail"] = sessionStorage.getItem("UserMail");
+}
+
+function UserSign(UserMail) {
+    var check = UserMail;
+    var fromStorage = sessionStorage.getItem("UserMail");
+
+    if (check != fromStorage) {
+        window.location.href = "SignIn.aspx";
+    }
+    else {
+        console.log("user is sign in");
+    }
 }
 
 
